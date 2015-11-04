@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20151103 12:42:33.050" generator="Robot 2.9.2 (Python 2.7.10 on win32)">
+<suite source="C:\Users\adonets\PycharmProjects\TT\src\TestPy.txt" id="s1" name="TestPy">
+<test id="s1-t1" name="CCLoginTest">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://qahint.crplatform.net/</arg>
+<arg>ie</arg>
+</arguments>
+<msg timestamp="20151103 12:42:33.211" level="INFO">Opening browser 'ie' to base url 'https://qahint.crplatform.net/'</msg>
+<status status="PASS" endtime="20151103 12:42:36.408" starttime="20151103 12:42:33.210"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets current browser's implicit wait in seconds.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20151103 12:42:36.427" starttime="20151103 12:42:36.411"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20151103 12:42:36.431" level="INFO">Typing text 'admin' into text field 'username'</msg>
+<status status="PASS" endtime="20151103 12:42:37.072" starttime="20151103 12:42:36.429"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${PassWord}</arg>
+</arguments>
+<msg timestamp="20151103 12:42:37.073" level="INFO">Typing password into text field 'password'</msg>
+<status status="PASS" endtime="20151103 12:42:37.358" starttime="20151103 12:42:37.072"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>submit</arg>
+</arguments>
+<msg timestamp="20151103 12:42:37.358" level="INFO">Clicking button 'submit'.</msg>
+<status status="PASS" endtime="20151103 12:42:43.317" starttime="20151103 12:42:37.358"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//*[contains(@class, 'logout')]</arg>
+</arguments>
+<msg timestamp="20151103 12:42:45.074" level="INFO">Current page contains element 'xpath=//*[contains(@class, 'logout')]'.</msg>
+<status status="PASS" endtime="20151103 12:42:45.074" starttime="20151103 12:42:43.317"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>xpath=//*[contains(@class, 'project-version pull-right')]/h4</arg>
+<arg>Nov 2</arg>
+</arguments>
+<msg timestamp="20151103 12:42:45.074" level="INFO">Verifying element 'xpath=//*[contains(@class, 'project-version pull-right')]/h4' contains text 'Nov 2'.</msg>
+<status status="PASS" endtime="20151103 12:42:49.048" starttime="20151103 12:42:45.074"></status>
+</kw>
+<status status="PASS" endtime="20151103 12:42:49.048" critical="yes" starttime="20151103 12:42:33.209"></status>
+</test>
+<test id="s1-t2" name="CCUserManagementCreateNewUser">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${OpenModuleUserManagement}</arg>
+</arguments>
+<msg timestamp="20151103 12:42:49.048" level="INFO">Clicking element 'xpath=.//*[@id='accordionMenu']/div[12]/div[1]/a[@href='#submenu12']'.</msg>
+<status status="PASS" endtime="20151103 12:42:56.658" starttime="20151103 12:42:49.048"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${OpenModuleUserManagementSubmodule}</arg>
+</arguments>
+<msg timestamp="20151103 12:42:56.658" level="INFO">Clicking element 'xpath=//div[@id='submenu12']//a[@title = 'User Management']'.</msg>
+<status status="PASS" endtime="20151103 12:43:01.871" starttime="20151103 12:42:56.658"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${NewUserButton}</arg>
+</arguments>
+<msg timestamp="20151103 12:43:01.871" level="INFO">Clicking element 'xpath=//a[@class='btn btn-primary pull-left']'.</msg>
+<status status="PASS" endtime="20151103 12:43:04.488" starttime="20151103 12:43:01.871"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserNameField}</arg>
+<arg>${UserTestName}</arg>
+</arguments>
+<msg timestamp="20151103 12:43:04.489" level="INFO">Typing text 'AutoTestUser' into text field 'id=username'</msg>
+<status status="PASS" endtime="20151103 12:43:05.349" starttime="20151103 12:43:04.489"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserEmailField}</arg>
+<arg>${UserTestEmail}</arg>
+</arguments>
+<msg timestamp="20151103 12:43:05.349" level="INFO">Typing text 'donetsandrew@gmail.com' into text field 'id=email'</msg>
+<status status="PASS" endtime="20151103 12:43:05.886" starttime="20151103 12:43:05.349"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserFirstNameField}</arg>
+<arg>${UserTestFirstName}</arg>
+</arguments>
+<msg timestamp="20151103 12:43:05.887" level="INFO">Typing text 'Auto' into text field 'id=firstName'</msg>
+<status status="PASS" endtime="20151103 12:43:06.431" starttime="20151103 12:43:05.886"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserLastNameField}</arg>
+<arg>${UserTestLastName}</arg>
+</arguments>
+<msg timestamp="20151103 12:43:06.431" level="INFO">Typing text 'Donets' into text field 'id=lastName'</msg>
+<status status="PASS" endtime="20151103 12:43:06.901" starttime="20151103 12:43:06.431"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserJobTitleField}</arg>
+<arg>${UserTestJobTitle}</arg>
+</arguments>
+<msg timestamp="20151103 12:43:06.901" level="INFO">Typing text 'AutoTester' into text field 'id=jobTitle'</msg>
+<status status="PASS" endtime="20151103 12:43:07.537" starttime="20151103 12:43:06.901"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserAdressField}</arg>
+<arg>${UserTestAdress}</arg>
+</arguments>
+<msg timestamp="20151103 12:43:07.537" level="INFO">Typing text 'Sadova2a' into text field 'id=address'</msg>
+<status status="PASS" endtime="20151103 12:43:08.009" starttime="20151103 12:43:07.537"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserPhoneField}</arg>
+<arg>${UserTestPhone}</arg>
+</arguments>
+<msg timestamp="20151103 12:43:08.012" level="INFO">Typing text '05454584584' into text field 'id=phone'</msg>
+<status status="PASS" endtime="20151103 12:43:08.439" starttime="20151103 12:43:08.012"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by `locator`.</doc>
+<msg timestamp="20151103 12:43:08.439" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20151103 12:43:10.822" starttime="20151103 12:43:08.439"></status>
+</kw>
+<status status="PASS" endtime="20151103 12:43:10.823" critical="yes" starttime="20151103 12:42:49.048"></status>
+</test>
+<test id="s1-t3" name="CCUserManagementEdit/DeleteNewUser">
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets current browser's implicit wait in seconds.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20151103 12:43:10.840" starttime="20151103 12:43:10.829"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UserSearchField}</arg>
+<arg>${UserTestFirstName}</arg>
+</arguments>
+<msg timestamp="20151103 12:43:10.842" level="INFO">Typing text 'Auto' into text field 'id=keyword-input'</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20151103 12:43:40.126" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20151103 12:43:40.126" starttime="20151103 12:43:20.921"></status>
+</kw>
+<msg timestamp="20151103 12:43:40.128" level="FAIL">ValueError: Element locator 'id=keyword-input' did not match any elements.</msg>
+<status status="FAIL" endtime="20151103 12:43:40.128" starttime="20151103 12:43:10.841"></status>
+</kw>
+<status status="FAIL" endtime="20151103 12:43:40.129" critical="yes" starttime="20151103 12:43:10.827">ValueError: Element locator 'id=keyword-input' did not match any elements.</status>
+</test>
+<status status="FAIL" endtime="20151103 12:43:40.131" starttime="20151103 12:42:33.052"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="TestPy" pass="2">TestPy</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
