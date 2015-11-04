@@ -37,7 +37,7 @@ ${UserDeleteProfile}  xpath=//a[@user-name='AutoTestUser']
 ${UserDeleteProfileConfirmationButton}  id=deleteButton
 *** Test Cases ***
 CCLoginTest
-    open browser  https://qahint.crplatform.net/  ie
+    open browser  https://qahint.crplatform.net/  chrome
     set browser implicit wait  10
     input text  username  ${UserName}
     input password  password  ${PassWord}
