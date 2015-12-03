@@ -1,0 +1,16 @@
+*** Variables ***
+#Global variables-------------------------------------
+${HOMEPAGE}  https://www.google.com
+${BROWSER}  firefox
+#-------------------------------------
+${UserName}  andrywkaja@gmail.com
+${PassWord}  asdzxc1232
+${UserTestName}  AutoTestUser
+${UserTestEmail}  donetsandrew@gmail.com
+${UserTestFirstName}  Auto
+${UserTestLastName}  Donets
+${UserTestJobTitle}  AutoTester
+${UserTestAdress}  Sadova2a
+${UserTestPhone}  05454584584
+${UserLocation}  AutomationTestGroup0732/EPUALVIW0732
+#-----------------------------------------------------------------------

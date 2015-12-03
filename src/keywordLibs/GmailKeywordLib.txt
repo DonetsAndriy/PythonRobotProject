@@ -1,0 +1,19 @@
+*** Keywords ***
+Google and get mail box page
+  [Arguments]  ${searchkey}  ${result}
+  INPUT TEXT  id=lst-ib  ${searchkey}
+  click button  name=btnG
+  wait until page contains  ${result}  10
+Log in to gmail
+   click element  xpath=//*[@class='r']/a
+   #click element  id=link-signin
+   wait until page contains  ${UserEmail}  10
+   input text  ${UserEmail}  ${UserName}
+   click button  ${NextButton}
+  wait until page contains element  ${UserPass}  10
+  input password  ${UserPass}  ${PassWord}
+   submit form
+   click element  ${GoogleAdds}
+   click element  ${GmailMailBox}
+Go to homepage
+  open browser  ${HOMEPAGE}  ${BROWSER}

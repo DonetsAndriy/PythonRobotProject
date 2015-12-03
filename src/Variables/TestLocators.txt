@@ -1,0 +1,21 @@
+*** Variables ***
+#User Management Locators
+${UserEmail}  Email
+${NextButton}   next
+${UserPass}  Passwd
+${SignInButton}  signIn
+${GoogleAdds}  xpath=//a[@title='Google Apps']
+${GmailMailBox}  xpath=//span[text()='Gmail']
+${UserJobTitleField}  id=jobTitle
+${UserAdressField}  id=address
+${UserPhoneField}  id=phone
+${UserSearchField}  id=keyword-input
+${UserSearchButton}  xpath=//button[@class='btn-search']
+${UserShowDisabledCheckbox}  xpath=.//*[@id='container']/div[2]/div/div/div[1]/label/span
+#//label[@class='checkbox inline']/input[@type='hidden']
+${UserActivate/DeactivateTougle}  xpath=//a[@class='set-user-state deactivate']
+${UserEmptyUserList}  xpath=//div[@class='empty']
+${UserEditProfile}  xpath=//a[@class='edit']
+${UserAddLocatiomMappingDropDown}  xpath=.//*[@id='details-form']/div[1]/div/div[3]/div[1]/div[3]/div/input[4]
+${UserDeleteProfile}  xpath=//a[@user-name='AutoTestUser']
+${UserDeleteProfileConfirmationButton}  xpath=//a[@id='deleteButton']or//a[@class='btn btn-primary btn-large pull-right']

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20151109 17:53:15.052" generator="Robot 2.9.2 (Python 2.7.10 on win32)">
+<suite source="C:\Users\adonets\PycharmProjects\TT\scripts\login.txt" id="s1" name="Login">
+<test id="s1-t1" name="Invalid Login">
+<kw type="setup" name="Open Browser To English Home Page">
+<doc>*Creating keyword failed:* No keyword with name 'Open Browser To English Home Page' found.</doc>
+<msg timestamp="20151109 17:53:15.177" level="FAIL">No keyword with name 'Open Browser To English Home Page' found.</msg>
+<status status="FAIL" endtime="20151109 17:53:15.177" starttime="20151109 17:53:15.177"></status>
+</kw>
+<kw type="teardown" name="Close Browser After Run">
+<doc>*Creating keyword failed:* No keyword with name 'Close Browser After Run' found.</doc>
+<msg timestamp="20151109 17:53:15.178" level="FAIL">No keyword with name 'Close Browser After Run' found.</msg>
+<status status="FAIL" endtime="20151109 17:53:15.178" starttime="20151109 17:53:15.178">No keyword with name 'Close Browser After Run' found.</status>
+</kw>
+<status status="FAIL" endtime="20151109 17:53:15.178" critical="yes" starttime="20151109 17:53:15.175">Setup failed:
+No keyword with name 'Open Browser To English Home Page' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser After Run' found.</status>
+</test>
+<doc>A test suite with a single test for valid login. This test has
+a workflow that is created using keywords from the resource file.</doc>
+<status status="FAIL" endtime="20151109 17:53:15.179" starttime="20151109 17:53:15.054"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Login" pass="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20151109 17:53:15.174" level="WARN">Imported library 'page_objects' contains no keywords</msg>
+</errors>
+</robot>

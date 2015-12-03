@@ -2,6 +2,7 @@
 Documentation
 Library  Selenium2Library
 Library  OperatingSystem
+Library  PageObjects
 *** Variables ***
 ${UserName}  admin
 ${PassWord}  123
@@ -15,7 +16,7 @@ ${UserTestPhone}  05454584584
 ${UserLocation}  AutomationTestGroup0732/EPUALVIW0732
 #-----------------------------------------------------------------------
 #User Management Locators
-${OpenModuleUserManagement}  xpath=.//*[@id='accordionMenu']/div[12]/div[1]/a[@href='#submenu12']
+${OpenModuleUserManagement}  xpath=//a[@class='accordion-toggle collapsed' and (@href='#submenu12')]/span
 ${OpenModuleUserManagementSubmodule}  xpath=//div[@id='submenu12']//a[@title = 'User Management']
 ${NewUserButton}  xpath=//a[@class='btn btn-primary pull-left']
 ${UserNameField}  id=username
@@ -34,16 +35,16 @@ ${UserEmptyUserList}  xpath=//div[@class='empty']
 ${UserEditProfile}  xpath=//a[@class='edit']
 ${UserAddLocatiomMappingDropDown}  xpath=.//*[@id='details-form']/div[1]/div/div[3]/div[1]/div[3]/div/input[4]
 ${UserDeleteProfile}  xpath=//a[@user-name='AutoTestUser']
-${UserDeleteProfileConfirmationButton}  id=deleteButton
+${UserDeleteProfileConfirmationButton}  xpath=//a[@id='deleteButton']or//a[@class='btn btn-primary btn-large pull-right']
 *** Test Cases ***
 CCLoginTest
-    open browser  https://qahint.crplatform.net/  chrome
+    open browser  https://qahint.crplatform.net/  firefox
     set browser implicit wait  10
     input text  username  ${UserName}
     input password  password  ${PassWord}
     click button  submit
     Page Should Contain Element  xpath=//*[contains(@class, 'logout')]
-    Element Should Contain  xpath=//*[contains(@class, 'project-version pull-right')]/h4  Nov 2
+    Element Should Contain  xpath=//*[contains(@class, 'project-version pull-right')]/h4  Nov 4
     #close browser
 
 CCUserManagementCreateNewUser
