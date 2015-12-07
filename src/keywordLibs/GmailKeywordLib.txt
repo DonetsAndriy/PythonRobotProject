@@ -17,3 +17,16 @@ Log in to gmail
    click element  ${GmailMailBox}
 Go to homepage
   open browser  ${HOMEPAGE}  ${BROWSER}
+Categories navigation
+  click element  ${StartedCategory}
+  click element  ${ImportantCategory}
+  click element  ${SentMailCategory}
+  click element  ${DraftsCategory}
+  click element  ${InboxCategory}
+  #wait until page contains element  ${FirstLetter}  10
+  click element  ${FirstLetter}
+Delete Letter
+  wait until page contains element  ${SelectLetter}  10  No fucken element on the page
+  click element  ${SelectLetter}
+  wait until page contains element  ${DeleteLetter}  10
+  click element  ${DeleteLetter}

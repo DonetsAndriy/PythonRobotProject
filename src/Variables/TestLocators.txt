@@ -19,3 +19,11 @@ ${UserEditProfile}  xpath=//a[@class='edit']
 ${UserAddLocatiomMappingDropDown}  xpath=.//*[@id='details-form']/div[1]/div/div[3]/div[1]/div[3]/div/input[4]
 ${UserDeleteProfile}  xpath=//a[@user-name='AutoTestUser']
 ${UserDeleteProfileConfirmationButton}  xpath=//a[@id='deleteButton']or//a[@class='btn btn-primary btn-large pull-right']
+${StartedCategory}  xpath=//*[contains(text(),'Starred')]
+${ImportantCategory}  xpath=//*[contains(text(),'Important')]
+${SentMailCategory}  xpath=//*[contains(text(),'Sent Mail')]
+${DraftsCategory}  xpath=//*[contains(text(),'Drafts (')]
+${InboxCategory}  xpath=//*[contains(text(),'Inbox')]
+${FirstLetter}  css=div.y6
+${SelectLetter}  xpath=//tr[2]/td[2]/div/div
+${DeleteLetter}  xpath=//div[@id=':5']/div[4]/div/div/div/div/div[2]/div[3]

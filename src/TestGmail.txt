@@ -5,37 +5,18 @@ Resource  Variables/TestData.txt
 Resource  Variables/TestLocators.txt
 Library  Selenium2Library
 Library  OperatingSystem
-#Library  PageObjects
 Suite Setup  Go to homepage
-Suite Teardown  Close All Browsers
+#Suite Teardown  Close All Browsers
 *** Test Cases ***
 
 GmailLoginTest
   Google and get mail box page  gmail  mail.google.com
   Log in to gmail
+GothrouCat
+  Categories navigation
+  click element  ${InboxCategory}
+  Delete Letter
 
-#*** Keywords ***
-#Google and get mail box page
-#  [Arguments]  ${searchkey}  ${result}
-#  INPUT TEXT  id=lst-ib  ${searchkey}
-#  click button  name=btnG
-#  wait until page contains  ${result}  10
-#Log in to gmail
-#   click element  xpath=//*[@class='r']/a
-#   click element  id=link-signin
-#   wait until page contains  ${UserEmail}  10
-#   input text  ${UserEmail}  ${UserName}
-#   click button  ${NextButton}
-#  wait until page contains element  ${UserPass}  10
-#  input password  ${UserPass}  ${PassWord}
-#   submit form
-#   click element  ${GoogleAdds}
-#   click element  ${GmailMailBox}
-#Go to homepage
-#  open browser  ${HOMEPAGE}  ${BROWSER}
-    #Page Should Contain Element  xpath=//*[contains(@class, 'logout')]
-    #Element Should Contain  xpath=//*[contains(@class, 'project-version pull-right')]/h4  Nov 4
-    #close browser
 
 
 

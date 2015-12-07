@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20151203 15:54:00.259" generator="Robot 2.9.2 (Python 2.7.10 on win32)">
+<robot generated="20151207 16:22:38.463" generator="Robot 2.9.2 (Python 2.7.10 on win32)">
 <suite source="C:\Users\adonets\PycharmProjects\TT\src\TestGmail.txt" id="s1" name="TestGmail">
 <kw type="setup" name="Go to homepage" library="GmailKeywordLib">
 <kw name="Open Browser" library="Selenium2Library">
@@ -8,10 +8,10 @@
 <arg>${HOMEPAGE}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20151203 15:54:00.455" level="INFO">Opening browser 'firefox' to base url 'https://www.google.com'</msg>
-<status status="PASS" endtime="20151203 15:54:08.466" starttime="20151203 15:54:00.455"></status>
+<msg timestamp="20151207 16:22:41.679" level="INFO">Opening browser 'firefox' to base url 'https://www.google.com'</msg>
+<status status="PASS" endtime="20151207 16:22:53.641" starttime="20151207 16:22:41.678"></status>
 </kw>
-<status status="PASS" endtime="20151203 15:54:08.467" starttime="20151203 15:54:00.454"></status>
+<status status="PASS" endtime="20151207 16:22:53.642" starttime="20151207 16:22:41.677"></status>
 </kw>
 <test id="s1-t1" name="GmailLoginTest">
 <kw name="Google and get mail box page" library="GmailKeywordLib">
@@ -25,16 +25,16 @@
 <arg>id=lst-ib</arg>
 <arg>${searchkey}</arg>
 </arguments>
-<msg timestamp="20151203 15:54:08.469" level="INFO">Typing text 'gmail' into text field 'id=lst-ib'</msg>
-<status status="PASS" endtime="20151203 15:54:08.709" starttime="20151203 15:54:08.469"></status>
+<msg timestamp="20151207 16:22:53.645" level="INFO">Typing text 'gmail' into text field 'id=lst-ib'</msg>
+<status status="PASS" endtime="20151207 16:22:53.864" starttime="20151207 16:22:53.644"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>name=btnG</arg>
 </arguments>
-<msg timestamp="20151203 15:54:08.710" level="INFO">Clicking button 'name=btnG'.</msg>
-<status status="PASS" endtime="20151203 15:54:08.794" starttime="20151203 15:54:08.709"></status>
+<msg timestamp="20151207 16:22:53.865" level="INFO">Clicking button 'name=btnG'.</msg>
+<status status="PASS" endtime="20151207 16:22:53.949" starttime="20151207 16:22:53.864"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
@@ -42,9 +42,9 @@
 <arg>${result}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20151203 15:54:09.379" starttime="20151203 15:54:08.794"></status>
+<status status="PASS" endtime="20151207 16:22:54.537" starttime="20151207 16:22:53.949"></status>
 </kw>
-<status status="PASS" endtime="20151203 15:54:09.380" starttime="20151203 15:54:08.468"></status>
+<status status="PASS" endtime="20151207 16:22:54.538" starttime="20151207 16:22:53.643"></status>
 </kw>
 <kw name="Log in to gmail" library="GmailKeywordLib">
 <kw name="Click Element" library="Selenium2Library">
@@ -52,8 +52,8 @@
 <arguments>
 <arg>xpath=//*[@class='r']/a</arg>
 </arguments>
-<msg timestamp="20151203 15:54:09.383" level="INFO">Clicking element 'xpath=//*[@class='r']/a'.</msg>
-<status status="PASS" endtime="20151203 15:54:09.451" starttime="20151203 15:54:09.382"></status>
+<msg timestamp="20151207 16:22:54.551" level="INFO">Clicking element 'xpath=//*[@class='r']/a'.</msg>
+<status status="PASS" endtime="20151207 16:22:54.697" starttime="20151207 16:22:54.550"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
@@ -61,7 +61,7 @@
 <arg>${UserEmail}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20151203 15:54:10.441" starttime="20151203 15:54:09.452"></status>
+<status status="PASS" endtime="20151207 16:22:55.663" starttime="20151207 16:22:54.698"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -69,16 +69,16 @@
 <arg>${UserEmail}</arg>
 <arg>${UserName}</arg>
 </arguments>
-<msg timestamp="20151203 15:54:10.445" level="INFO">Typing text 'andrywkaja@gmail.com' into text field 'Email'</msg>
-<status status="PASS" endtime="20151203 15:54:10.573" starttime="20151203 15:54:10.443"></status>
+<msg timestamp="20151207 16:22:55.664" level="INFO">Typing text 'andrywkaja@gmail.com' into text field 'Email'</msg>
+<status status="PASS" endtime="20151207 16:22:55.755" starttime="20151207 16:22:55.663"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>${NextButton}</arg>
 </arguments>
-<msg timestamp="20151203 15:54:10.574" level="INFO">Clicking button 'next'.</msg>
-<status status="PASS" endtime="20151203 15:54:11.554" starttime="20151203 15:54:10.573"></status>
+<msg timestamp="20151207 16:22:55.756" level="INFO">Clicking button 'next'.</msg>
+<status status="PASS" endtime="20151207 16:22:56.479" starttime="20151207 16:22:55.756"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -86,7 +86,7 @@
 <arg>${UserPass}</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20151203 15:54:11.812" starttime="20151203 15:54:11.555"></status>
+<status status="PASS" endtime="20151207 16:22:56.599" starttime="20151207 16:22:56.480"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -94,49 +94,143 @@
 <arg>${UserPass}</arg>
 <arg>${PassWord}</arg>
 </arguments>
-<msg timestamp="20151203 15:54:11.813" level="INFO">Typing password into text field 'Passwd'</msg>
-<status status="PASS" endtime="20151203 15:54:12.229" starttime="20151203 15:54:11.813"></status>
+<msg timestamp="20151207 16:22:56.601" level="INFO">Typing password into text field 'Passwd'</msg>
+<status status="PASS" endtime="20151207 16:22:57.210" starttime="20151207 16:22:56.600"></status>
 </kw>
 <kw name="Submit Form" library="Selenium2Library">
 <doc>Submits a form identified by `locator`.</doc>
-<msg timestamp="20151203 15:54:12.230" level="INFO">Submitting form 'None'.</msg>
-<status status="PASS" endtime="20151203 15:54:12.696" starttime="20151203 15:54:12.230"></status>
+<msg timestamp="20151207 16:22:57.211" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20151207 16:22:57.724" starttime="20151207 16:22:57.210"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${GoogleAdds}</arg>
 </arguments>
-<msg timestamp="20151203 15:54:12.697" level="INFO">Clicking element 'xpath=//a[@title='Google Apps']'.</msg>
-<status status="PASS" endtime="20151203 15:54:16.843" starttime="20151203 15:54:12.696"></status>
+<msg timestamp="20151207 16:22:57.725" level="INFO">Clicking element 'xpath=//a[@title='Google Apps']'.</msg>
+<status status="PASS" endtime="20151207 16:23:02.271" starttime="20151207 16:22:57.724"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${GmailMailBox}</arg>
 </arguments>
-<msg timestamp="20151203 15:54:16.844" level="INFO">Clicking element 'xpath=//span[text()='Gmail']'.</msg>
-<status status="PASS" endtime="20151203 15:54:19.696" starttime="20151203 15:54:16.843"></status>
+<msg timestamp="20151207 16:23:02.272" level="INFO">Clicking element 'xpath=//span[text()='Gmail']'.</msg>
+<status status="PASS" endtime="20151207 16:23:02.493" starttime="20151207 16:23:02.271"></status>
 </kw>
-<status status="PASS" endtime="20151203 15:54:19.697" starttime="20151203 15:54:09.381"></status>
+<status status="PASS" endtime="20151207 16:23:02.493" starttime="20151207 16:22:54.549"></status>
 </kw>
-<status status="PASS" endtime="20151203 15:54:19.698" critical="yes" starttime="20151203 15:54:08.467"></status>
+<status status="PASS" endtime="20151207 16:23:02.494" critical="yes" starttime="20151207 16:22:53.642"></status>
 </test>
-<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20151203 15:54:19.869" starttime="20151203 15:54:19.700"></status>
+<test id="s1-t2" name="GothrouCat">
+<kw name="Categories navigation" library="GmailKeywordLib">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${StartedCategory}</arg>
+</arguments>
+<msg timestamp="20151207 16:23:02.497" level="INFO">Clicking element 'xpath=//*[contains(text(),'Starred')]'.</msg>
+<status status="PASS" endtime="20151207 16:23:05.525" starttime="20151207 16:23:02.497"></status>
 </kw>
-<status status="PASS" endtime="20151203 15:54:19.869" starttime="20151203 15:54:00.261"></status>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ImportantCategory}</arg>
+</arguments>
+<msg timestamp="20151207 16:23:05.527" level="INFO">Clicking element 'xpath=//*[contains(text(),'Important')]'.</msg>
+<status status="PASS" endtime="20151207 16:23:06.317" starttime="20151207 16:23:05.526"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${SentMailCategory}</arg>
+</arguments>
+<msg timestamp="20151207 16:23:06.318" level="INFO">Clicking element 'xpath=//*[contains(text(),'Sent Mail')]'.</msg>
+<status status="PASS" endtime="20151207 16:23:07.322" starttime="20151207 16:23:06.318"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${DraftsCategory}</arg>
+</arguments>
+<msg timestamp="20151207 16:23:07.323" level="INFO">Clicking element 'xpath=//*[contains(text(),'Drafts (')]'.</msg>
+<status status="PASS" endtime="20151207 16:23:08.708" starttime="20151207 16:23:07.322"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${InboxCategory}</arg>
+</arguments>
+<msg timestamp="20151207 16:23:08.710" level="INFO">Clicking element 'xpath=//*[contains(text(),'Inbox')]'.</msg>
+<status status="PASS" endtime="20151207 16:23:09.018" starttime="20151207 16:23:08.709"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${FirstLetter}</arg>
+</arguments>
+<msg timestamp="20151207 16:23:09.019" level="INFO">Clicking element 'css=div.y6'.</msg>
+<status status="PASS" endtime="20151207 16:23:09.822" starttime="20151207 16:23:09.018"></status>
+</kw>
+<status status="PASS" endtime="20151207 16:23:09.823" starttime="20151207 16:23:02.496"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${InboxCategory}</arg>
+</arguments>
+<msg timestamp="20151207 16:23:09.824" level="INFO">Clicking element 'xpath=//*[contains(text(),'Inbox')]'.</msg>
+<status status="PASS" endtime="20151207 16:23:10.395" starttime="20151207 16:23:09.823"></status>
+</kw>
+<kw name="Delete Letter" library="GmailKeywordLib">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${SelectLetter}</arg>
+<arg>10</arg>
+<arg>No fucken element on the page</arg>
+</arguments>
+<status status="PASS" endtime="20151207 16:23:10.450" starttime="20151207 16:23:10.397"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${SelectLetter}</arg>
+</arguments>
+<msg timestamp="20151207 16:23:10.451" level="INFO">Clicking element 'xpath=//tr[2]/td[2]/div/div'.</msg>
+<status status="PASS" endtime="20151207 16:23:10.598" starttime="20151207 16:23:10.450"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${DeleteLetter}</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20151207 16:23:10.783" starttime="20151207 16:23:10.599"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${DeleteLetter}</arg>
+</arguments>
+<msg timestamp="20151207 16:23:10.784" level="INFO">Clicking element 'xpath=//div[@id=':5']/div[4]/div/div/div/div/div[2]/div[3]'.</msg>
+<status status="PASS" endtime="20151207 16:23:11.009" starttime="20151207 16:23:10.784"></status>
+</kw>
+<status status="PASS" endtime="20151207 16:23:11.009" starttime="20151207 16:23:10.397"></status>
+</kw>
+<status status="PASS" endtime="20151207 16:23:11.010" critical="yes" starttime="20151207 16:23:02.495"></status>
+</test>
+<status status="PASS" endtime="20151207 16:23:11.011" starttime="20151207 16:22:38.465"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="1">Critical Tests</stat>
-<stat fail="0" pass="1">All Tests</stat>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="TestGmail" pass="1">TestGmail</stat>
+<stat fail="0" id="s1" name="TestGmail" pass="2">TestGmail</stat>
 </suite>
 </statistics>
 <errors>
